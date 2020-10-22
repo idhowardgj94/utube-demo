@@ -1,0 +1,15 @@
+ul {
+  display: flex;
+  justify-content: right;
+  padding: 10px;
+
+  &  li {
+    margin-right: 30px;
+  }
+}
+
+.body {
+  max-width: 1140px;
+  margin: auto;
+  min-height: 50px;
+}

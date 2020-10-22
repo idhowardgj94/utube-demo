@@ -5,6 +5,9 @@
 * prettier for code style guildline
 * use react-router
 
+# 切版 recommand guide
+
+* [ref](https://thewhitelabelagency.com/recommended-screen-resolution-for-web-design/)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
