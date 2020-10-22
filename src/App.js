@@ -1,8 +1,13 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function tryflow(n: number): number {
+  return n + 1;
+}
+
+export function App(): React$Node {
   return (
     <div className="App">
       <header className="App-header">

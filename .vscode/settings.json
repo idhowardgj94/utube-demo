@@ -1,0 +1,10 @@
+{
+  "javascript.validate.enable": false,
+  "flowide.enable": true,
+  "flowide.useCodeSnippetsOnFunctionSuggest": true,
+  "editor.formatOnSave": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
+}
