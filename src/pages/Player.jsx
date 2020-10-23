@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useState } from 'react';
 import { useParams } from 'react-router';
 import AdBox from '../components/AdBox';
 import ReactHlsPlayer from 'react-hls-player';
@@ -10,7 +10,7 @@ import type { Items } from '../services/youtubeApiService';
 export function Player(): React.Node {
   const videoEl = useRef(null);
   let { id } = useParams();
-  const [s, _] = useState<Items>(ApiService.get(id));
+  const [s] = useState<Items>(ApiService.get(id));
 
   return (
     <div className="container">
