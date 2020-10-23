@@ -3,6 +3,8 @@ import * as React from 'react';
 import './App.scss';
 import styled from 'styled-components';
 import Home from './pages/Home';
+import Player from './pages/Player';
+import Like from './pages/Like';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 const Header = styled.header`
@@ -27,10 +29,10 @@ export function App(): React.Node {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/player">Player</Link>
               </li>
               <li>
-                <Link to="/users">Users</Link>
+                <Link to="/like">Users</Link>
               </li>
             </ul>
           </nav>
@@ -38,11 +40,11 @@ export function App(): React.Node {
 
         <div className="body">
           <Switch>
-            <Route path="/about">
-              <About />
+            <Route path="/player">
+              <Player />
             </Route>
-            <Route path="/users">
-              <Users />
+            <Route path="/like">
+              <Like />
             </Route>
             <Route path="/">
               <Home />
@@ -53,14 +55,6 @@ export function App(): React.Node {
       </Router>
     </>
   );
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }
 
 export default App;

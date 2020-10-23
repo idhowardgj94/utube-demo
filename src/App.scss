@@ -1,3 +1,8 @@
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
 ul {
   display: flex;
   justify-content: right;
@@ -40,17 +45,44 @@ ul {
     &.disabled a {
       color: grey;
     }
+
+    &.active a{
+      padding: 20px;
+      background-color:#007bff ;
+      box-shadow: 1px 1px rgba(0,0,0,1);
+      border: none;
+      color: whitesmoke;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: grab;
+    }
+
+    & a {
+      padding: 20px;
+      background-color: rgba(255,255,255, 0.2);
+      box-shadow: 1px 1px rgba(0,0,0,0.1);
+      border: none;
+      color: #007bff;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: grab;
+    }
   }
-  & a {
-    padding: 20px;
-    background-color: rgba(255,255,255, 0.2);
-    box-shadow: 1px 1px rgba(0,0,0,0.1);
-    border: none;
-    color: #007bff;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: grab;
-  }
+  
+}
+
+.topic {
+  font-size: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.pd20 {
+  padding: 20px;
 }
