@@ -86,3 +86,17 @@ ul {
 .pd20 {
   padding: 20px;
 }
+
+.pl8 {
+  padding-left: 8px;
+}
+
+.text_overflow_ellipsis {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

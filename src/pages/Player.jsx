@@ -1,11 +1,16 @@
 // @flow
 import * as React from 'react';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
+import { useParams } from 'react-router';
 import AdBox from '../components/AdBox';
 import ReactHlsPlayer from 'react-hls-player';
 import '../sass/Player.scss';
+import ApiService from '../services/youtubeApiService';
+import type { Items } from '../services/youtubeApiService';
 export function Player(): React.Node {
   const videoEl = useRef(null);
+  let { id } = useParams();
+  const [s, _] = useState<Items>(ApiService.get(id));
 
   return (
     <div className="container">
@@ -22,9 +27,12 @@ export function Player(): React.Node {
         <AdBox videoEl={videoEl} />
       </section>
       <section>
-        <div className="topic">
-          【閒君】我覺得很值得一看｜短評《塗鴉王國和四位勇士》
-        </div>
+        <h1 className="topic">{s.snippet.title}</h1>
+        {s.snippet.description.split('\n').map((t, i) => (
+          <p key={i}>{t}</p>
+        ))}
+
+        {/* <p dangerouslySetInnerHTML={{ __html: s.snippet.description }} /> */}
       </section>
     </div>
   );
