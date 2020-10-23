@@ -9,13 +9,11 @@ const Header = styled.header`
   max-width: 1140px;
   margin: auto;
   min-height: 50px;
-  background-color: yellow;
 `;
 
 const Footer = styled.footer`
   min-height: 50px;
   margin: auto;
-  background-color: yellow;
 `;
 
 export function App(): React.Node {

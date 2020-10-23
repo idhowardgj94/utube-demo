@@ -1,0 +1,26 @@
+.box {
+  margin: 5px;
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border: 1px solid grey;
+}
+
+img {
+  max-height: 118px;
+  width: 100%;
+  flex: 1;
+}
+
+.description {
+  flex: 2;
+}
+
+.topic {
+  font-size: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 10px;
+}
