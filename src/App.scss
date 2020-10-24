@@ -1,14 +1,4 @@
 @media (min-width: 768px) {
-  ul {
-    display: flex;
-    justify-content: right;
-    padding: 10px;
-    list-style-type: none;
-    & li {
-      margin-right: 30px;
-    }
-  }
-
   .pagination {
     margin: auto;
     justify-content: center;
@@ -52,28 +42,10 @@
         cursor: grab;
       }
     }
-  }
-
-  .topic {
-    font-size: 20px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    padding: 10px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  ul {
-    display: flex;
-    justify-content: right;
-    padding: 10px;
-    list-style-type: none;
-    & li {
-      margin-right: 30px;
-    }
-  }
-
   .pagination {
     margin: auto;
     justify-content: center;
@@ -118,27 +90,9 @@
       }
     }
   }
-
-  .topic {
-    font-size: 20px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    padding: 10px;
-  }
 }
 
 @media (max-width: 575px) {
-  ul {
-    display: flex;
-    justify-content: right;
-    padding: 10px;
-    list-style-type: none;
-    & li {
-      margin-right: 30px;
-    }
-  }
-
   .pagination {
     margin: auto;
     justify-content: center;
@@ -183,14 +137,24 @@
       }
     }
   }
+}
 
-  .topic {
-    font-size: 20px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    padding: 10px;
+ul {
+  display: flex;
+  justify-content: right;
+  padding: 10px;
+  list-style-type: none;
+  & li {
+    margin-right: 30px;
   }
+}
+
+.topic {
+  font-size: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 10px;
 }
 
 .body {

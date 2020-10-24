@@ -15,10 +15,7 @@
     "react-paginate": "^6.5.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.4",
-    "rxjs": "^6.6.3",
-    "styled-components": "^5.2.0",
-    "xstate": "^4.13.0",
-    "xstate-react": "^0.1.1"
+    "rxjs": "^6.6.3"
   },
   "scripts": {
     "flow": "flow",
