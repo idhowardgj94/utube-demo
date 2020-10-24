@@ -1,10 +1,8 @@
-## YouTube 功能實作
-
-[題目網址](https://drive.google.com/file/d/1kcgi1AnftVVsFd-Q836W2aUQg64Lzc5M/view?fbclid=IwAR2pZPaUL4Qkqfl77igbp8tnCBck2HAtL11uEWnMHsJTzzpF7NQe4Bw9JEs)
+## video web 功能實作
 
 - 選擇使用 React，使用 `create-react-app`做腳手架。
 - css 使用 `sass/scss`實作。
-- 完成題目要求的基本切版及功能。
+- 完成要求的基本切版及功能。
 - 使用 `github page` 做 demo，[網址](https://idhowardgj94.github.io/utube-demo/)
 
 ## 依賴
