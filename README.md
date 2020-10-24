@@ -46,7 +46,7 @@
 
 因為是小專案展示，因此沒有使用`state management library`（`redux`、`xstate`等等），也省略序列化 route config 、 api constant 等架構。
 
-## 為什麼不使用 Typescript
+## Flow vs Typescript
 
 `Typescript` 是一個 `language`，必須撰寫 `ts`，並且編譯回原生 js。
 
@@ -64,6 +64,6 @@
 
 ## 注意事項
 
-由於 `github page` 服務僅支援單頁或網頁，
+由於 `github page` 服務僅支援單頁式網頁，
 
 因此必須從 `root`才能進入 demo site。
