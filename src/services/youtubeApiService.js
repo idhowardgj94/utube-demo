@@ -4,8 +4,8 @@ import { tap, switchMap } from 'rxjs/operators';
 
 export type Thumbnail = {
   url: string,
-  width: Number,
-  height: Number,
+  width: number,
+  height: number,
 };
 
 export type Items = {
@@ -58,7 +58,7 @@ class YoutubeApiService {
   init() {
     from(
       fetch(
-        'https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails&chart=mostPopular&maxResults=50&key=AIzaSyCrwZT5eJWe9ue4IDvvmrvXftdyVDIkQa8'
+        'https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails&chart=mostPopular&maxResults=50&key=AIzaSyDE83bg6cVc2HymzqOQbBMtYGJuE-d7Nm4'
       ).then((r) => r.json())
     )
       .pipe(
@@ -67,7 +67,7 @@ class YoutubeApiService {
         switchMap((data) =>
           from(
             fetch(`
-        https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails&chart=mostPopular&maxResults=50&pageToken=${data.nextPageToken}&key=AIzaSyCrwZT5eJWe9ue4IDvvmrvXftdyVDIkQa8
+        https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails&chart=mostPopular&maxResults=50&pageToken=${data.nextPageToken}&key=AIzaSyDE83bg6cVc2HymzqOQbBMtYGJuE-d7Nm4
         `).then((r) => r.json())
           )
         )
@@ -93,7 +93,7 @@ class YoutubeApiService {
       : [];
   }
 
-  get(id: number): ?Items {
+  get(id: string): ?Items {
     return this._repo$.value
       ? this._repo$.value.items.find((d) => d.id === id)
       : null;

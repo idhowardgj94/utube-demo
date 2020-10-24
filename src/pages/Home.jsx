@@ -24,7 +24,7 @@ export function Home(): React.Node {
         {data !== null &&
           data.map((d, idx) => (
             <VideoBox
-              key={idx}
+              key={d.id}
               id={d.id}
               thumbnail={d.snippet.thumbnails.default}
               title={d.snippet.title}
