@@ -1,24 +1,12 @@
 // @flow
 import * as React from 'react';
 import './App.scss';
-import styled from 'styled-components';
 import Home from './pages/Home';
 import Player from './pages/Player';
 import Like from './pages/Like';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import ApiService from './services/youtubeApiService';
-
-const Header = styled.header`
-  max-width: 1140px;
-  margin: auto;
-  min-height: 50px;
-`;
-
-const Footer = styled.footer`
-  min-height: 50px;
-  margin: auto;
-`;
 
 export function App(): React.Node {
   const [event, setEvent] = useState('init');
@@ -38,7 +26,7 @@ export function App(): React.Node {
     return (
       <>
         <Router basename="/utube-demo">
-          <Header>
+          <section className="header">
             <nav>
               <ul>
                 <li>
@@ -49,7 +37,7 @@ export function App(): React.Node {
                 </li>
               </ul>
             </nav>
-          </Header>
+          </section>
           <div className="body">
             <Switch>
               <Route path="/player/:id">
@@ -62,7 +50,6 @@ export function App(): React.Node {
                 <Home />
               </Route>
             </Switch>
-            <Footer>sample expired by ...</Footer>
           </div>
         </Router>
       </>
