@@ -3,20 +3,20 @@ import { BehaviorSubject, from } from 'rxjs';
 import { tap, switchMap } from 'rxjs/operators';
 
 export type Thumbnail = {
-  url: String,
+  url: string,
   width: Number,
   height: Number,
 };
 
 export type Items = {
-  kind: String,
-  etag: String,
-  id: String,
+  kind: string,
+  etag: string,
+  id: string,
   snippet: {
     publishedAt: Date,
-    channelId: String,
-    title: String,
-    description: String,
+    channelId: string,
+    title: string,
+    description: string,
     thumbnails: {
       default: Thumbnail,
       medium: Thumbnail,
@@ -25,19 +25,19 @@ export type Items = {
       maxres: Thumbnail,
     },
   },
-  channelTitle: String,
-  categoryId: String,
-  liveBroadcastContent: String,
+  channelTitle: string,
+  categoryId: string,
+  liveBroadcastContent: string,
   contentDetails: {
-    duration: String,
+    duration: string,
   },
 };
 
 export type YoutubeRepository = {
-  kind: String,
-  etag: String,
+  kind: string,
+  etag: string,
   items: Items[],
-  nextPageToken: String,
+  nextPageToken: string,
 };
 
 class YoutubeApiService {
@@ -75,7 +75,10 @@ class YoutubeApiService {
       .subscribe((data: YoutubeRepository) => {
         const nextItems = data.items;
         const r = this._repo$.value;
-        r.items = r.items.concat(nextItems);
+        if (r !== null) {
+          r.items = r.items.concat(nextItems);
+        }
+
         this._repo$.next(r);
         this._event$.next('ready');
       });
@@ -90,9 +93,10 @@ class YoutubeApiService {
       : [];
   }
 
-  get(id): Item {
-    console.log(this._repo$.value.items.find((d) => d.id === id));
-    return this._repo$.value.items.find((d) => d.id === id);
+  get(id: number): ?Items {
+    return this._repo$.value
+      ? this._repo$.value.items.find((d) => d.id === id)
+      : null;
   }
 }
 

@@ -1,6 +1,6 @@
 // @flow
 
-export function getDuration(t: String | string): string {
+export function getDuration(t: string | string): string {
   const r = t
     .split('T')[1]
     .replace('M', '分')

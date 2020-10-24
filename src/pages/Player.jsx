@@ -10,7 +10,7 @@ import type { Items } from '../services/youtubeApiService';
 export function Player(): React.Node {
   const videoEl = useRef(null);
   let { id } = useParams();
-  const [s] = useState<Items>(ApiService.get(id));
+  const [s] = useState<?Items>(ApiService.get(id));
 
   return (
     <div className="container">
@@ -27,10 +27,9 @@ export function Player(): React.Node {
         <AdBox videoEl={videoEl} />
       </section>
       <section>
-        <h1 className="topic">{s.snippet.title}</h1>
-        {s.snippet.description.split('\n').map((t, i) => (
-          <p key={i}>{t}</p>
-        ))}
+        <h1 className="topic">{s && s.snippet.title}</h1>
+        {s &&
+          s.snippet.description.split('\n').map((t, i) => <p key={i}>{t}</p>)}
 
         {/* <p dangerouslySetInnerHTML={{ __html: s.snippet.description }} /> */}
       </section>

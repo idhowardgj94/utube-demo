@@ -1,5 +1,5 @@
 // @flow
-import * as React  from 'react';
+import * as React from 'react';
 import img from '../assets/sample.jpg';
 import '../sass/VideoBox.scss';
 import type { Thumbnail } from '../services/youtubeApiService';
@@ -7,10 +7,10 @@ import { getDuration } from '../utils';
 import { Link } from 'react-router-dom';
 interface Props {
   thumbnail: Thumbnail;
-  title: String;
-  id: String;
-  description: String;
-  duration: String;
+  title: string;
+  id: string;
+  description: string;
+  duration: string;
 }
 
 export function VideoBox(props: Props): React$Node {

@@ -21,16 +21,17 @@ export function Home(): React.Node {
   return (
     <div className="container">
       <section className="wrapper">
-        {data.map((d, idx) => (
-          <VideoBox
-            key={idx}
-            id={d.id}
-            thumbnail={d.snippet.thumbnails.default}
-            title={d.snippet.title}
-            description={d.snippet.description}
-            duration={d.contentDetails.duration}
-          />
-        ))}
+        {data !== null &&
+          data.map((d, idx) => (
+            <VideoBox
+              key={idx}
+              id={d.id}
+              thumbnail={d.snippet.thumbnails.default}
+              title={d.snippet.title}
+              description={d.snippet.description}
+              duration={d.contentDetails.duration}
+            />
+          ))}
       </section>
 
       <ReactPaginate

@@ -4,14 +4,14 @@ import { createContext, useState } from 'react';
 
 export type Context = [
   {
-    title: String,
-    description: String,
-    duration: String,
+    title: string,
+    description: string,
+    duration: string,
   },
-  () => void
+  Function
 ];
 
-export const VContext = createContext<Context>([
+export const VContext: React$Context<Context> = createContext<Context>([
   {
     title: 'demo',
     description: '請從首頁點選',
@@ -20,7 +20,7 @@ export const VContext = createContext<Context>([
   () => {},
 ]);
 
-export function ContextProvider(props: React.PropsWithChildren<any>) {
+export function ContextProvider(props: React.ElementProps<any>): React$Node {
   const [state, setstate] = useState({
     title: 'demo',
     description: '請從首頁點選',
