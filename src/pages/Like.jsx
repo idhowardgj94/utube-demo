@@ -3,7 +3,6 @@ import * as React from 'react';
 import { useState, useEffect } from 'react';
 import VideoBox from '../components/VideoBox';
 import '../sass/Home.scss';
-import ApiService from '../services/youtubeApiService';
 import LikeService from '../services/likeApiService';
 import type { Items } from '../services/youtubeApiService';
 
