@@ -5,7 +5,7 @@
 - 選擇使用 React，使用 `create-react-app`做腳手架。
 - css 使用 `sass/scss`實作。
 - 完成題目要求的基本切版及功能。
-- 使用 `github page` 做 demo，[網址](idhowardgj94.github.io/utube-demo/)
+- 使用 `github page` 做 demo，[網址](https://idhowardgj94.github.io/utube-demo/)
 
 ## 依賴
 
@@ -44,7 +44,7 @@
 +--+ App.scss # global style
 ```
 
-因為是小專案展示，因此沒有使用`state management library`（`redux`、`xstate`等等）。
+因為是小專案展示，因此沒有使用`state management library`（`redux`、`xstate`等等），也省略序列化 route config 、 api constant 等架構。
 
 ## 為什麼不使用 Typescript
 
