@@ -1,7 +1,6 @@
 // @flow
 import * as React from 'react';
 import { useState } from 'react';
-import img from '../assets/sample.jpg';
 import '../sass/VideoBox.scss';
 import type { Thumbnail } from '../services/youtubeApiService';
 import { getDuration } from '../utils';
