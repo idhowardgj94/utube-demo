@@ -26,7 +26,7 @@ export function Home(): React.Node {
             <VideoBox
               key={d.id}
               id={d.id}
-              thumbnail={d.snippet.thumbnails.default}
+              thumbnail={d.snippet.thumbnails.standard}
               title={d.snippet.title}
               description={d.snippet.description}
               duration={d.contentDetails.duration}

@@ -28,10 +28,7 @@ export function AdBox(props: PropType): React.Node {
   }, [props]);
   return (
     <div className={`ad ${adshow ? '' : 'hide'}`}>
-      <h1 className="pd20">
-        demo designed by Howard Chang. <br />
-        I'm looking for a frontend engineer job.....QQ
-      </h1>
+      <h1 className="pd10 text_center">此demo範例由Howarrd設計</h1>
     </div>
   );
 }

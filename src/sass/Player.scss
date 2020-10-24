@@ -1,11 +1,49 @@
+@media (min-width: 992px) {
+  .ad {
+    position: absolute;
+    background-color: whitesmoke;
+    bottom: 150px;
+    left: 25%;
+    width: 500px;
+    height: 300px;
+  }
+}
 
-.ad {
-  position: absolute;
-  background-color: whitesmoke;
-  bottom: 150px;
-  left: 25%;
-  width: 500px;
-  height: 300px;
+@media (min-width: 576px) and (max-width: 767px) {
+  .ad {
+    position: absolute;
+    background-color: whitesmoke;
+    bottom: 75px;
+    left: 25%;
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 575px) {
+  .ad {
+    position: absolute;
+    background-color: whitesmoke;
+    bottom: 75px;
+    left: 25%;
+    width: 200px;
+    height: 100px;
+  }
+
+  h1 {
+    margin: 10px;
+  }
+}
+
+.description_card {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.hide {
+  visibility: hidden;
 }
 
 .video {
@@ -14,8 +52,4 @@
 
 .video_container {
   position: relative;
-}
-
-.hide {
-  visibility: hidden;
 }

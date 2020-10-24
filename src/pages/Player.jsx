@@ -26,12 +26,10 @@ export function Player(): React.Node {
         />
         <AdBox videoEl={videoEl} />
       </section>
-      <section>
+      <section className="description_card">
         <h1 className="topic">{s && s.snippet.title}</h1>
         {s &&
           s.snippet.description.split('\n').map((t, i) => <p key={i}>{t}</p>)}
-
-        {/* <p dangerouslySetInnerHTML={{ __html: s.snippet.description }} /> */}
       </section>
     </div>
   );

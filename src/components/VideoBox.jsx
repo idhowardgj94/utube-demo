@@ -26,10 +26,13 @@ export function VideoBox(props: Props): React$Node {
     }
     refresh(!islike);
   };
+
   return (
     <section className="box">
       <Link to={`/player/${props.id}`}>
-        <img src={props.thumbnail.url} alt="video img" />
+        <section className="img_container">
+          <img src={props.thumbnail.url} alt="video img" />
+        </section>
       </Link>
 
       <div className="description">
@@ -38,7 +41,7 @@ export function VideoBox(props: Props): React$Node {
             <div className="topic">{props.title}</div>
           </Link>
         </section>
-        <section>
+        <section className="p10">
           <div className="pl8">
             影片長度: {getDuration(props.duration)} {` `}
             {islike ? (
