@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/utube-demo/static/css/main.43c37045.chunk.css",
+    "main.css": "/utube-demo/static/css/main.6af96f5f.chunk.css",
     "main.js": "/utube-demo/static/js/main.d04f0ddb.chunk.js",
     "main.js.map": "/utube-demo/static/js/main.d04f0ddb.chunk.js.map",
     "runtime-main.js": "/utube-demo/static/js/runtime-main.16e0aefe.js",
@@ -8,15 +8,15 @@
     "static/js/2.e5bcc199.chunk.js": "/utube-demo/static/js/2.e5bcc199.chunk.js",
     "static/js/2.e5bcc199.chunk.js.map": "/utube-demo/static/js/2.e5bcc199.chunk.js.map",
     "index.html": "/utube-demo/index.html",
-    "precache-manifest.97a64481823a2cdffd37df31830c4bd8.js": "/utube-demo/precache-manifest.97a64481823a2cdffd37df31830c4bd8.js",
+    "precache-manifest.65902721ec7d01e1ffc83070492a34e3.js": "/utube-demo/precache-manifest.65902721ec7d01e1ffc83070492a34e3.js",
     "service-worker.js": "/utube-demo/service-worker.js",
-    "static/css/main.43c37045.chunk.css.map": "/utube-demo/static/css/main.43c37045.chunk.css.map",
+    "static/css/main.6af96f5f.chunk.css.map": "/utube-demo/static/css/main.6af96f5f.chunk.css.map",
     "static/js/2.e5bcc199.chunk.js.LICENSE.txt": "/utube-demo/static/js/2.e5bcc199.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.16e0aefe.js",
     "static/js/2.e5bcc199.chunk.js",
-    "static/css/main.43c37045.chunk.css",
+    "static/css/main.6af96f5f.chunk.css",
     "static/js/main.d04f0ddb.chunk.js"
   ]
 }
