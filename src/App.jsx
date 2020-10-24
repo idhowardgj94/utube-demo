@@ -37,7 +37,7 @@ export function App(): React.Node {
   } else {
     return (
       <>
-        <Router>
+        <Router basename="/utube-demo">
           <Header>
             <nav>
               <ul>
